@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding:0;
+    /* background-color:#ffc3c381; */
+    background-color: rgba(136, 136, 243, 0.678);
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+
+}
+.container h1{
+    text-align: center;
+    color: rgb(39, 39, 39);
+}
+.inner_container{
+    display: flex;
+    margin-bottom: 20px;
+}
+.inner_container #input_task{
+    font-size: 20px;
+    flex-grow: 1;
+    outline: none;
+    padding: 15px;
+    border: 1px solid rgb(39, 39, 39);
+    border-radius: 5px 0 0 5px;
+}
+.inner_container #add_btn{
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgb(39, 39, 39);
+    background-color: rgb(71, 71, 233);
+    border-radius: 0 5px 5px 0;
+}
+.inner_container #add_btn:hover{
+    background-color: rgb(39, 39, 39);
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(39, 39, 39);
+}
+li:last-child{
+    border-bottom: none;
+}
+
+li input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    flex-grow: 1;
+    padding: 5px;
+    border-bottom: 1px solid rgb(39, 39, 39);
+}
+li .edit_btn,
+li .delete_btn {
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li .edit_btn {
+    background-color:rgb(71, 71, 233);
+    color: white;
+}
+
+li .edit_btn:hover {
+    background-color:rgb(39, 39, 39);
+}
+
+li .delete_btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+li .delete_btn:hover {
+    background-color: #be3632;
+}
+
+
+/* Responsive design css */
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    #input_task {
+        border-radius: 5px 5px 0 0;
+    }
+
+    #add_btn {
+        border-radius: 0 0 5px 5px;
+    }
+}
